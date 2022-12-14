@@ -1,0 +1,121 @@
+.nav__container {
+  background-color: var(--color-1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+  z-index: 10000;
+}
+
+.categories {
+  display: flex;
+  margin: 0 3rem;
+}
+
+.categories li a, .navbar__right li a {
+  color: black;
+}
+
+.category {
+  position: relative;
+}
+
+.category a {
+  padding: 1.6rem ;
+  transition: var(--transition);
+}
+
+.category a:hover, .drop-bar li:hover{
+  background-color: var(--color-2);
+}
+
+.category:hover .drop-bar, .drop-bar:hover{
+  visibility: visible;
+}
+
+.categories .drop-bar {
+  visibility: hidden;
+  width: auto;
+  position: absolute;
+  padding: 0 1rem;
+  top: 3.15rem;
+  left: -1rem;
+}
+
+.drop-bar li {
+  display: inline-block;
+  background-color: var(--color-1);
+  white-space: nowrap;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.400s;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  margin: 0 3rem;
+}
+
+.searchbar input {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem ;
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.searchbar span {
+  margin: 0 0.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  cursor: pointer;
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+
+.searchbar span:hover {
+  background-color: var(--color-2);
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navbar__right li:hover a {
+  color: whitesmoke;
+  transition: var(--transition);
+}
+
+.navbar__right .sell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 2rem;
+  background: red;
+  border-radius: 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.navbar__right .sell:hover {
+  background-color: var(--color-4);
+}
+
+.navbar__right .sell a {
+  color: white;
+  font-weight: 500;
+}
+

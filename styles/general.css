@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-1: #b2afac;
+  --color-2: #959492;
+  --color-3: #d3d0cd;
+  --color-4: #ffce2b;
+
+  --container-width-lg: 70%;
+  --container-width-md: 85%;
+  --container-width-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+body {
+  font-family: 'Poppins', Sans-serif;
+  line-height: 1.7;
+  color: black;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+section {
+  padding: 6rem 0;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+section > h1 {
+  text-align: center;
+}

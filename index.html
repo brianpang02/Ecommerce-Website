@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <link
+     rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Ecommerce</title>
+  </head>
+  <body>
+    <nav class="container nav__container">
+      <h1>BRIAN</h1>
+      <ul class="categories">
+        <li class="category">
+          <a href="#">Electronics</a>
+          <ul class="drop-bar">
+            <li>Computers and Tech</li>
+            <li>Mobile Phones and Gadgets</li>
+            <li>Video Gaming</li>
+            <li>TV and Home Appliances</li>
+            <li>Audio</li>
+            <li>Photography</li>
+          </ul>
+        </li>
+        <li class="category">
+          <a href="#">Fashion</a>
+          <ul class="drop-bar">
+            <li>Women's Fashion</li>
+            <li>Men's Fashion</li>
+          </ul>
+        </li>
+        <li class="category">
+          <a href="#">Services</a>
+          <ul class="drop-bar">
+            <li>Renovations</li>
+            <li>Home Repairs</li>
+            <li>Home Cleaning</li>
+            <li>Delivery</li>
+          </ul>
+        </li>
+        <li class="category">
+          <a href="#">Luxury</a>
+          <ul class="drop-bar">
+            <li>Bags and Wallets</li>
+            <li>Apparel</li>
+            <li>Accessories</li>
+            <li>Watches</li>
+            <li>Sneakers and Footwear</li>
+          </ul>
+        </li>
+        <li class="category">
+          <a href="#">Cars</a>
+          <ul class="drop-bar">
+            <li>New</li>
+            <li>Used</li>
+            <li>Rental</li>
+            <li>Car Accessories</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="searchbar">
+        <input type="text" placeholder="Search" />
+        <span><i class="uil uil-search"></i></span>
+      </div>
+      <ul class="navbar__right">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Sign Up</a></li>
+        <li><a href="#">Login</a></li>
+        <li class="sell"><a href="#">Sell</a></li>
+      </ul>
+    </nav>
+
+    <header class="swiper">
+      <div class="mySwiper">
+        <div class="header__container swiper-wrapper">
+          <div class="slide slide-1 swiper-slide">
+            <span><img src="pictures/swiper-pic1.jpg" alt="" /></span>
+            <div class="description">
+              <h1>WHAT'S NEW!</h1>
+              <h2>View the Latest Styles</h3>
+            </div>
+          </div>
+          <div class="slide slide-2 swiper-slide">
+            <span><img src="pictures/swiper-pic2.jpg" alt="" /></span>
+          </div>
+          <div class="slide slide-3 swiper-slide">
+            <span><img src="pictures/swiper-pic3.jpg" alt="" /></span>
+            <div class="description">
+              <h1>PHISHING SCAMES ARE ON THE RISE</h1>
+              <h2>Be wary of buyers asking for email address and phone numbers!</h3>
+            </div>
+          </div>
+          <div class="slide slide-4 swiper-slide">
+            <span><img src="pictures/swiper-pic4.webp" alt="" /></span>
+            <div class="description">
+              <h1>Want To <span style="color: red; display: inline-block;">Sell?</span></h1>
+              <h2>Create an account now!</h3>
+            </div>
+          </div>
+          <div class="slide slide-5 swiper-slide">
+            <span><img src="pictures/swiper-pic5.jpg" alt="" /></span>
+            <div class="description">
+              <h1>Check Out Local Merchants</span></h1>
+              <h2>Support our local businesses!</h3>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </header>
+
+    <section>
+      <h1>What would you like to find?</h1>
+      <div class="container types__container">
+        <div class="type">
+          <span><img src="pictures/type1.png" alt=""></span>
+          <h5>Men's Fashion</h5>
+        </div>
+        <div class="type">
+          <span><img src="pictures/type2.png" alt=""></span>
+          <h5>Women's Fashion</h5>
+        </div>
+        <div class="type">
+          <span><img src="pictures/type3.png" alt=""></span>
+          <h5>Luxury</h5>
+        </div>
+        <div class="type">
+          <span><img src="pictures/type4.png" alt=""></span>
+          <h5>Mobile Phones</h5>
+        </div>
+        <div class="type">
+          <span><img src="pictures/type5.png" alt=""></span>
+          <h5>Cars</h5>
+        </div>
+        <div class="type">
+          <span><img src="pictures/type6.png" alt=""></span>
+          <h5>Home Services</h5>
+        </div>
+        <div class="type">
+          <span><img src="pictures/type7.png" alt=""></span>
+          <h5>Properties</h5>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h1>Just in</h1>
+      <div class="container just-in__container">
+        <div class="container-1">
+          <div class="box1">
+            <div class="just-in-description">
+              <span><img src="pictures/just-in-sunglasses.jpg" alt=""></span>
+              <div class="just-in-category">
+                <h2>Sunglasses</h2>
+                <button>Shop Now</button>
+              </div>
+            </div>
+            <div class="just-in-description">
+              <span><img src="pictures/just-in-sneakers.jpg" alt=""></span>
+              <div class="just-in-category">
+                <h2>Sneakers</h2>
+                <button>Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="box2">
+            <div class="just-in-description">
+              <span><img src="pictures/just-in-watch.jpg" alt=""></span>
+              <div class="just-in-category">
+                <h2>Watches</h2>
+                <button>Shop Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-2">
+          <div class="just-in-description">
+            <span><img src="pictures/just-in-shirt.jpg" alt=""></span>
+            <div class="just-in-category">
+              <h2>T-Shirts</h2>
+              <button>Shop Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    
+  </body>
+</html>
