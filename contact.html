@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Website</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,500;1,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/contact.css">
+
+    <style>
+      body{
+        background-image: url('images/bg-texture.png');
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <nav class="container nav__container">
+        <h1>BRIAN</h1>
+        <ul class="categories">
+          <li class="category">
+            <a href="#">Electronics</a>
+            <ul class="drop-bar">
+              <li>Computers and Tech</li>
+              <li>Mobile Phones and Gadgets</li>
+              <li>Video Gaming</li>
+              <li>TV and Home Appliances</li>
+              <li>Audio</li>
+              <li>Photography</li>
+            </ul>
+          </li>
+          <li class="category">
+            <a href="#">Fashion</a>
+            <ul class="drop-bar">
+              <li>Women's Fashion</li>
+              <li>Men's Fashion</li>
+            </ul>
+          </li>
+          <li class="category">
+            <a href="#">Services</a>
+            <ul class="drop-bar">
+              <li>Renovations</li>
+              <li>Home Repairs</li>
+              <li>Home Cleaning</li>
+              <li>Delivery</li>
+            </ul>
+          </li>
+          <li class="category">
+            <a href="#">Luxury</a>
+            <ul class="drop-bar">
+              <li>Bags and Wallets</li>
+              <li>Apparel</li>
+              <li>Accessories</li>
+              <li>Watches</li>
+              <li>Sneakers and Footwear</li>
+            </ul>
+          </li>
+          <li class="category">
+            <a href="#">Cars</a>
+            <ul class="drop-bar">
+              <li>New</li>
+              <li>Used</li>
+              <li>Rental</li>
+              <li>Car Accessories</li>
+            </ul>
+          </li>
+        </ul>
+        <div class="searchbar">
+          <input type="text" placeholder="Search" />
+          <span><i class="uil uil-search"></i></span>
+        </div>
+        <ul class="navbar__right">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Sign Up</a></li>
+          <li><a href="#">Login</a></li>
+          <li class="sell"><a href="#">Sell</a></li>
+        </ul>
+      </nav>
+
+    <section class="contact">
+      <div class="container contact__container">
+        <aside class="contact__aside">
+          <div class="aside__image">
+            <img src="images/contact.svg" alt="">
+          </div>
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, et nihil accusamus eos eaque accusantium autem beatae nobis nam vitae.</p>
+          <ul class="contact__details">
+            <li>
+              <i class="uil uil-phone-times"></i>
+              <h5>+123 456 789</h5>
+            </li>
+            <li>
+              <i class="uil uil-envelope"></i>
+              <h5>johndoe@gmail.com</h5>
+            </li>
+            <li>
+              <i class="uil uil-location-point"></i>
+              <h5>Singapore, Singapore</h5>
+            </li>
+          </ul>
+          <ul class="contact__socials">
+            <li>
+              <a href="https://facebook.com"><i class="uil uil-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="https://instagram.com"><i class="uil uil-instagram-alt"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com"><i class="uil uil-twitter"></i></a>
+            </li>
+            <li>
+              <a href="https://linkedin.com"><i class="uil uil-linkedin-alt"></i></a>
+            </li>
+          </ul>
+        </aside>
+
+        <form class="contact__form">
+          <div class="form__name">
+            <input type="text" name="First Name" placeholder="First Name" required>
+            <input type="text" name="Last Name" placeholder="Last Name" required>
+          </div>
+          <input type="email" name="Email Address" placeholder="Your Email Address" required>
+          <textarea name="Message" rows="10" placeholder="Message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
