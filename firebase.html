@@ -1,0 +1,57 @@
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script type = "module">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            const firebaseConfig = {
+                apiKey: "AIzaSyDL9W0lhNhOfCFbK7Tgn6isVo19fWCXeo4",
+                authDomain: "ecommerce-622dd.firebaseapp.com",
+                databaseURL: "https://ecommerce-622dd-default-rtdb.asia-southeast1.firebasedatabase.app",
+                projectId: "ecommerce-622dd",
+                storageBucket: "ecommerce-622dd.appspot.com",
+                messagingSenderId: "698929163876",
+                appId: "1:698929163876:web:9160adb88a1933ddccf971"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            import {getDatabase, ref, get, set, child, update, remove} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
+            const db = getDatabase();
+            var enterName = document.querySelector("#name");
+            var enterPassword = document.querySelector("#password");
+            var insertBtn = document.querySelector("#insert");
+            function InsertData() {
+                set(ref(db, "People/"+ enterName.value),{
+                    Name: enterName.value,
+                    Password: enterPassword.value,
+                })
+                .then(()=>{
+                    alert("Data added successfully");
+                })
+                .catch((error)=>{
+                    alert(error);
+                });
+            }
+            insertBtn.addEventListener('click', InsertData);
+            // function writeData() {
+            //     db.ref("User").set({
+            //         name: document.getElementById("name").value,
+            //         password: document.getElementById("password").value,
+            //     });
+            // }
+          </script>
+
+          <h1>User Database</h1>
+          <input type = "text" placeholder = "name" id = "name">
+          <input type = "text" placeholder = "password" id = "password">
+          <button id = "insert">Sign Up</button>
+          
+    </body>
+</html>
