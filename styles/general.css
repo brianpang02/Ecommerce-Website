@@ -14,9 +14,9 @@
   --color-3: #d3d0cd;
   --color-4: #ffce2b;
 
-  --container-width-lg: 70%;
-  --container-width-md: 85%;
-  --container-width-sm: 90%;
+  --container-width-lg: 80%;
+  --container-width-md: 88%;
+  --container-width-sm: 95%;
 
   --transition: all 400ms ease;
 }
@@ -46,4 +46,24 @@ img {
 
 section > h1 {
   text-align: center;
+}
+
+@media screen and (max-width:1024px) {
+  section {
+    padding: 4rem 0;
+  }
+
+  .container {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width:600px) {
+  section {
+    padding: 2rem 0;
+  }
+
+  .container {
+    width: var(--container-width-sm);
+  }
 }
