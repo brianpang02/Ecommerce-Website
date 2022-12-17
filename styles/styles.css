@@ -1,3 +1,4 @@
+/*=====================================HEADER=======================================*/
 .swiper {
   width: 100%;
   overflow-x: hidden;
@@ -100,6 +101,8 @@ header img {
   background-color: var(--color-1);
 }
 
+
+/*===================================JUST IN========================================*/
 .just-in__container {
   display: grid;
   margin-top: 4rem;
@@ -203,7 +206,155 @@ header img {
   background-color: var(--color-2);
 }
 
-/*============================FOOTER=============================*/
+
+/*====================================TRENDING======================================*/
+.swiper__2 {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+.swiper__2 .swiper-button-next:after, .swiper__2 .swiper-button-prev:after {
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  border-radius: 50%;
+  opacity: 0.7;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.4);
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title > a {
+  transition: var(--transition);
+}
+
+.title > a:hover {
+  color: red;
+}
+
+
+.trending__container {
+  position: relative;
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding: 1rem 2rem;
+}
+
+.title .redirect {
+  color: black;
+}
+
+.trending {
+  padding: 1rem;
+  transition: var(--transition);
+  border-radius: 7px;
+}
+
+.trending:hover {
+  box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.product__header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  cursor: pointer;
+}
+
+.product__header > span img {
+  border-radius: 50%;
+  width: 40.17px;
+  height: 40.17px;
+}
+
+.product__details {
+  cursor: pointer;
+}
+
+.product__details > span {
+  width: 100%;
+}
+
+.product__details > span > img {
+  height: 209.4px;
+  border-radius: 7px;
+}
+
+.product__details span {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.favourites {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 0;
+}
+
+.favourites .icon {
+  display: inline-block;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+
+/*====================================SLASHED=======================================*/
+.product__details .new__price {
+  display: flex;
+  gap: 10px;
+  align-items: top;
+}
+
+.product__details .new__price h5 {
+  font-weight: normal;
+  text-decoration: line-through;
+}
+
+
+/*==================================RECOMMENDED=====================================*/
+.recommended__container {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  position: relative;
+}
+
+.recommended__container .product__details > span > img {
+  height: 300px;
+  border-radius: 7px;
+}
+
+.recommended__container a {
+  position: absolute;
+  left: 50%;
+  bottom: -5rem;
+  margin-left: -66.5px;
+  display: inline-block;
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.recommended__container a:hover {
+  background-color: var(--color-3);
+}
+
+/*=====================================FOOTER=======================================*/
 footer {
   background-color: var(--color-1);
 }

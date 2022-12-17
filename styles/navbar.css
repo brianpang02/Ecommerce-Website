@@ -2,7 +2,7 @@
   background-color: var(--color-1);
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   height: 4.6rem;
   display: flex;
   align-items: center;
@@ -11,16 +11,25 @@
   z-index: 10000;
 }
 
+.toggle {
+  font-size: 1.4rem;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+
 .nav__container > a {
   color: black;
+  margin-right: 1rem;
 }
 
 .categories {
+  position: relative;
   display: flex;
   margin: 0 3rem;
 }
 
-.categories li a, .navbar__right li a {
+.categories li a, .navbar__right li a{
   color: black;
 }
 
@@ -73,7 +82,7 @@
   border-radius: 1rem ;
   width: 100%;
   max-width: 500px;
-  min-width: 200px;
+  min-width: 100px;
   background-color: white;
 }
 
@@ -128,4 +137,100 @@
   font-weight: 500;
 }
 
-@media screen and (max-width: 1500px)
+@media screen and (max-width: 1360px) {
+  .nav__container > a {
+    margin-left: 3.5rem;
+  }
+
+  .toggle {
+    display: inline-block;
+  }
+
+  .categories {
+    background-color: var(--color-1);
+    position: absolute;
+    height: fit-content;
+    top: 4.6rem;
+    left: -3rem;
+    display: none;
+    flex-direction: column;
+  }
+  
+  .categories li a, .navbar__right li a{
+    color: black;
+  }
+  
+  .category > a {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .categories .drop-bar {
+    visibility: hidden;
+    width: auto;
+    position: absolute;
+    padding: 0 1rem;
+    top: 3.15rem;
+    left: -1rem;
+  }
+  
+  .category {
+    position: relative;
+  }
+  
+  .category a {
+    padding: 1rem 1.6rem ;
+    transition: var(--transition);
+  }
+  
+  .category a:hover, .drop-bar li:hover{
+    background-color: var(--color-2);
+  }
+  
+  .category:hover .drop-bar, .drop-bar:hover{
+    visibility: visible;
+  }
+  
+  .categories .drop-bar {
+    visibility: hidden;
+    width: auto;
+    position: absolute;
+    padding: 0;
+    top: 0;
+    left: 137.24px;
+  }
+  
+  .drop-bar li {
+    display: inline-block;
+    background-color: var(--color-1);
+    white-space: nowrap;
+    padding: 16px 20px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.400s;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .toggle {
+    left: 20px;
+  }
+
+  .nav__container > a {
+    margin-left: 15px;
+  }
+
+  .searchbar {
+    margin-right: 20px;
+  }
+
+  .navbar__right {
+    gap: 10px;
+  }
+
+  .navbar__right .sell {
+    display: none;
+  }
+}
+
