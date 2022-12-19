@@ -57,13 +57,3 @@ section > h1 {
     width: var(--container-width-md);
   }
 }
-
-@media screen and (max-width:600px) {
-  section {
-    padding: 2rem 0;
-  }
-
-  .container {
-    width: var(--container-width-sm);
-  }
-}
