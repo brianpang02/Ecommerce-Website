@@ -34,3 +34,23 @@ faqs.forEach (faq => {
     }
   })
 })
+
+const passwordField = document.querySelectorAll('.password__container')
+
+passwordField.forEach(field => {
+  const icon = field.querySelector('i')
+  icon.addEventListener('click', () => {
+    const input = field.querySelector('input')
+    if (input.type === 'password') {
+      input.type = 'text';
+    } else {
+      input.type = 'password'
+    }
+
+    if (icon.className === 'uil uil-eye') {
+      icon.className = 'uil uil-eye-slash'
+    } else {
+      icon.className = 'uil uil-eye'
+    }
+  })
+})

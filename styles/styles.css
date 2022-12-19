@@ -458,10 +458,12 @@ footer {
 
   .container {
     margin-top: 2rem;
+    width: var(--container-width-md);
   }
 
   .nav__container {
     margin-top: 0;
+    width: 100vw;
   }
 
   .types__container {
@@ -513,10 +515,12 @@ footer {
 
   .container {
     margin-top: 1.5rem;
+    width: var(--container-width-sm);
   }
 
   .nav__container {
     margin-top: 0;
+    width: 100vw;
   }
   
   .mySwiper__2 {
@@ -525,6 +529,14 @@ footer {
 
   .types__container {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .just-in__container {
+    grid-template-columns: 65% 35%;
+  }
+
+  .container-2 {
+    margin-right: 1rem;
   }
 
   .recommended__container {

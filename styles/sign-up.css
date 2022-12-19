@@ -1,0 +1,136 @@
+.sign-up__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.image img{
+  height: 100%;
+}
+
+.sign-up__details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.sign-up__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sign-up__title a {
+  color: rgb(0, 89, 255);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 1.5rem;
+}
+
+.google, .facebook {
+  display: flex;
+  background-color: grey;
+  color: white;
+  padding: 0.7rem;
+  align-items: center;
+  border-radius: 7px;
+}
+
+.google span, .facebook span {
+  display: inline-block;
+  width: 50px;
+  text-align: center;
+}
+
+.google p, .facebook p {
+  flex: 1;
+  text-align: center;
+}
+
+.google {
+  background-color: rgb(0, 68, 255);
+  transition: var(--transition);
+}
+
+.google:hover {
+  background-color: rgba(0, 68, 255, 0.8);
+}
+
+.facebook {
+  background-color: black;
+  transition: var(--transition);
+}
+
+.facebook:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+h4 {
+  display: flex;
+}
+
+h4:before, h4:after {
+  content: "";
+  flex: 1;
+  border-bottom: 2px solid grey;
+  margin: auto;
+}
+
+input {
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  padding: 1rem 1rem;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.password__container {
+  position: relative;
+}
+
+.password__container > span {
+  position: absolute;
+  font-size: 1.8rem;
+  top: 50%;
+  margin-top: -24.5px;
+  right: 1.5rem;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  padding: 1rem 1rem;
+  border-radius: 7px;
+  width: 200px;
+  margin: 0 0 0 auto;
+  color: white;
+  cursor: pointer;
+  background-color: rgb(0, 89, 255);
+  transition: var(--transition);
+}
+
+button:hover {
+  background-color: rgba(0, 89, 255, 0.8);
+}
+
+@media screen and (max-width:1024px) {
+  .sign-up__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .image {
+    display: inline-block;
+    width: 100%;
+  }
+}
