@@ -1,26 +1,27 @@
-.sign-up__container {
+.login__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
+  align-items: center;
 }
 
-.image img{
-  height: 100%;
+.image__2 {
+  display: none;
 }
 
-.sign-up__details {
+.login__details {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
-.sign-up__title {
+.login__title {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.sign-up__title a {
+.login__title a {
   color: rgb(0, 89, 255);
 }
 
@@ -112,7 +113,6 @@ button {
   padding: 1rem 1rem;
   border-radius: 7px;
   width: 200px;
-  margin: 0 0 0 auto;
   color: white;
   cursor: pointer;
   background-color: rgb(0, 89, 255);
@@ -123,14 +123,34 @@ button:hover {
   background-color: rgba(0, 89, 255, 0.8);
 }
 
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom a {
+  color: rgb(0, 89, 255);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width:1255px) {
+  .login__title {
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width:1024px) {
-  .sign-up__container {
+  .login__container {
     display: flex;
     flex-direction: column;
   }
 
-  .image {
+  .image__2 {
     display: inline-block;
-    width: 100%;
+  }
+
+  .image__1 {
+    display: none;
   }
 }

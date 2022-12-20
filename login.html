@@ -27,7 +27,7 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/navbar.css" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/sign-up.css" />
+    <link rel="stylesheet" href="styles/login.css" />
     <title>Ecommerce</title>
   </head>
 
@@ -94,19 +94,19 @@
       <ul class="navbar__right">
         <li><a href="contact.html">Contact</a></li>
         <li><a href="firebase.html">Sign Up</a></li>
-        <li><a href="login.html">Login</a></li>
+        <li><a href="#">Login</a></li>
         <li class="sell"><a href="#">Sell</a></li>
       </ul>
     </nav>
 
-    <!-- ====================================SIGN UP====================================-->
+    <!-- =====================================LOGIN====================================-->
     <section>
-      <div class="container sign-up__container">
-        <span class="image"><img src="pictures/sign-up.webp" alt="" /></span>
-        <div class="sign-up__details">
-          <div class="sign-up__title">
-            <h1>Join Us Today!</h1>
-            <p>or <a href="login.html">Login Here</a></p>
+      <div class="container login__container">
+        <span class="image__2"><img src="pictures/login.webp" alt="" /></span>
+        <div class="login__details">
+          <div class="login__title">
+            <h1>Welcome Back!</h1>
+            <p>or <a href="firebase.html">Create an account</a></p>
           </div>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
@@ -115,14 +115,13 @@
           </p>
           <a class="google" href="#">
             <span><i class="uil uil-google"></i></span>
-            <p>Sign up with Google</p>
+            <p>Login with Google</p>
           </a>
           <a class="facebook" href="#">
             <span><i class="uil uil-facebook-f"></i></span>
-            <p>Sign up with Facebook</p>
+            <p>Login with Facebook</p>
           </a>
           <h4>or</h4>
-          <input type="text" placeholder="Full Name" id="name" required />
           <input type="email" placeholder="Email Address" required />
           <div class="password__container">
             <input
@@ -133,17 +132,12 @@
             />
             <span><i class="uil uil-eye"></i></span>
           </div>
-          <div class="password__container">
-            <input
-              type="password"
-              placeholder="Confirm Password"
-              id="confirmPassword"
-              required
-            />
-            <span><i class="uil uil-eye"></i></span>
+          <div class="bottom">
+            <a href="">Forgot my Password</a>
+            <button id="insert">Login</button>
           </div>
-          <button id="insert">Sign Up</button>
         </div>
+        <span class="image__1"><img src="pictures/login.webp" alt="" /></span>
       </div>
     </section>
 
@@ -162,7 +156,7 @@
           <h1>Permalinks</h1>
           <a href="#">Home</a>
           <a href="#">About Us</a>
-          <a href="login.html">Login</a>
+          <a href="#">Login</a>
           <a href="#">Sign Up</a>
         </div>
         <div class="legal">
@@ -202,58 +196,5 @@
     </footer>
 
     <script src="main.js"></script>
-    <script type="module">
-      // Import the functions you need from the SDKs you need
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
-      // TODO: Add SDKs for Firebase products that you want to use
-      // https://firebase.google.com/docs/web/setup#available-libraries
-
-      // Your web app's Firebase configuration
-      const firebaseConfig = {
-        apiKey: "AIzaSyDL9W0lhNhOfCFbK7Tgn6isVo19fWCXeo4",
-        authDomain: "ecommerce-622dd.firebaseapp.com",
-        databaseURL:
-          "https://ecommerce-622dd-default-rtdb.asia-southeast1.firebasedatabase.app",
-        projectId: "ecommerce-622dd",
-        storageBucket: "ecommerce-622dd.appspot.com",
-        messagingSenderId: "698929163876",
-        appId: "1:698929163876:web:9160adb88a1933ddccf971",
-      };
-
-      // Initialize Firebase
-      const app = initializeApp(firebaseConfig);
-      import {
-        getDatabase,
-        ref,
-        get,
-        set,
-        child,
-        update,
-        remove,
-      } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
-      const db = getDatabase();
-      var enterName = document.querySelector("#name");
-      var enterPassword = document.querySelector("#password");
-      var insertBtn = document.querySelector("#insert");
-      function InsertData() {
-        set(ref(db, "People/" + enterName.value), {
-          Name: enterName.value,
-          Password: enterPassword.value,
-        })
-          .then(() => {
-            alert("Data added successfully");
-          })
-          .catch((error) => {
-            alert(error);
-          });
-      }
-      insertBtn.addEventListener("click", InsertData);
-      // function writeData() {
-      //     db.ref("User").set({
-      //         name: document.getElementById("name").value,
-      //         password: document.getElementById("password").value,
-      //     });
-      // }
-    </script>
   </body>
 </html>
