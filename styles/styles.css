@@ -399,6 +399,7 @@ footer {
   text-decoration: underline;
   text-decoration-color: var(--color-1);
   transition: var(--transition);
+  width: fit-content;
 }
 
 .footer__container a:hover {
@@ -409,6 +410,7 @@ footer {
 .permalinks, .legal, .contact-us {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .contact-us > ul > li {

@@ -1,0 +1,182 @@
+section {
+  padding: 10rem 0;
+}
+
+section > h1 {
+  font-size: 2rem;
+}
+
+/*====================================MISSION======================================*/
+header {
+  display: flex;
+  width: 100%;
+  background-image: url(/pictures/mission.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 35rem;
+  position: relative;
+}
+
+.mission {
+  border: 3px solid white;
+  border-radius: 0.5rem;
+  padding: 1.5rem 3rem;
+  background-color: rgba(136, 136, 136, 0.7) ;
+  color: white;
+  position: absolute;
+  width: 650px;
+  top: 50%;
+  margin-top: -145px;
+  left: 10rem;
+}
+
+.mission > h1 {
+  margin-bottom: 1rem;
+}
+
+.mission > p {
+  font-size: 1.2rem;
+}
+
+
+/*=================================DESCRIPTION====================================*/
+.description__section {
+  background-color: var(--color-3);
+}
+
+.description__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.description h1 {
+  font-size: 2rem;
+}
+
+.description p {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  line-height: 2.5em;
+}
+
+.description__container img {
+  height: 100%;
+  border-radius: 1rem;
+}
+
+/*===================================BENEFITS======================================*/
+.benefits__container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.benefit {
+  width: fit-content;
+  text-align: center;
+}
+
+.benefit img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.benefit > h2 {
+  margin: 2rem 0 1rem;
+}
+
+.benefit > p {
+  font-size: 1.1rem;
+}
+
+
+/*===================================MEMBERS======================================*/
+.members {
+  background-color: var(--color-3);
+}
+
+.members__container {
+  margin-top: 4rem;
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10rem;
+}
+
+.member {
+  text-align: center;
+}
+
+.member img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.member h1 {
+  margin: 1rem 0 0;
+}
+
+.member p {
+  width: 300px;
+  margin-top: 1rem;
+}
+
+footer {
+  margin-top: 0;
+}
+
+@media screen and (max-width:1024px) {
+  section {
+    padding: 4rem 0;
+  }
+  
+  .mission {
+    left: 2rem;
+    width: 550px;
+  }
+
+  .description__container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .description p {
+    line-height: 2em;
+  }
+
+  .benefits__container {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    justify-content: center;
+  }
+
+  .members__container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .footer__container {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width:626px) {
+  .benefits__container {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit {
+    width: 100%;
+  }
+
+  .footer__container {
+    margin-top: 0;
+  }
+}
