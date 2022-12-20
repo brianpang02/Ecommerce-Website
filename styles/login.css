@@ -110,7 +110,7 @@ input {
 button {
   font-size: 1.2rem;
   border: 1px solid gray;
-  padding: 1rem 1rem;
+  padding: 1rem;
   border-radius: 7px;
   width: 200px;
   color: white;

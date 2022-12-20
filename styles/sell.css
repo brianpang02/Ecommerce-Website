@@ -1,0 +1,107 @@
+.title {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.sell__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+}
+
+.product__image {
+  border: 2px solid rgb(14, 124, 100);
+  border-radius: 10px;
+  background-color: rgba(91, 187, 166, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 6rem 3rem;
+  cursor: pointer;
+}
+
+.product__image span {
+  font-size: 3.5rem;
+}
+
+.product__image h1 {
+  background-color: rgb(14, 124, 100);
+  color: white;
+  font-weight: 500;
+  font-size: 1.3rem;
+  width: fit-content;
+  padding: 0.3rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.product__image .instructions {
+  color: rgb(102, 102, 102);
+}
+
+.product__description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.product__description input::placeholder, .product__description textarea::placeholder {
+  font-family: 'Poppins', Sans-serif;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.product__description input, .product__description textarea {
+  border: 2px solid var(--color-3);
+  font-family: 'Poppins', Sans-serif;
+  padding: 1rem 0.5rem;
+  font-size: 1.2rem;
+  color: black;
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.product__description button {
+  font-size: 1.2rem;
+  border: 1px solid gray;
+  padding: 1rem;
+  border-radius: 5px;
+  width: 200px;
+  color: white;
+  cursor: pointer;
+  background-color: red;
+  margin: 0 0 0 auto;
+  transition: var(--transition);
+}
+
+.product__description button:hover {
+  background-color: rgba(255, 0, 0, 0.6);
+}
+
+.product__description input:focus, .product__description textarea:focus {
+  border-color: black;
+}
+
+@media screen and (max-width:1024px) {
+  .sell__container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .title {
+    width: var(--container-width-md);
+  }
+}
+
+@media screen and (max-width:626px) {
+  .title {
+    width: var(--container-width-sm);
+    margin-bottom: 2rem;
+  }
+}

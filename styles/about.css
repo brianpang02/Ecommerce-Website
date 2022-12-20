@@ -10,7 +10,7 @@ section > h1 {
 header {
   display: flex;
   width: 100%;
-  background-image: url(/pictures/mission.png);
+  background-image: url(../pictures/mission.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 35rem;
